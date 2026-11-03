@@ -1,0 +1,10 @@
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: mongodb-practica
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin_dev_123
+    ports:
+      - "27017:27017"
